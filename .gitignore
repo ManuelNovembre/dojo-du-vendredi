@@ -1,0 +1,65 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# logs
+boot.log
+
+# compiled output
+**/dist
+**/tmp
+**/out-tsc
+
+# dependencies
+**/node_modules
+
+#angular
+**/.angular
+**/coverage/**
+**/junit.xml
+
+# IDEs and editors
+/.idea
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+**/.history/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+**/.vscode/*
+**/.sts4-cache/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+.factorypath
+
+# System Files
+.DS_Store
+Thumbs.db
+
+**/*.iml
+target
+**/application-local*.properties
+**/application-local*.yml
+**/spas/**/src/config.json
+
+#Metrics containers
+**/prometheus.yaml
+**/metrics/grafana-data/**
+**/metrics/prometheus-data/**
+
+githooks-enabled
