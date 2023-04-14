@@ -39,5 +39,21 @@ class GildedRoseTest {
         Assertions.assertEquals(20, (baseItems[0].quality));
     }
 
-    //TODO test aged brie case
+    @Test
+    void aged_brie_should_not_decrease_in_quantity_and_quality() {
+        // GIVEN
+        Item[] baseItems = new Item[]{new Item("Aged Brie", 10, 20)};
+        var gildedRose = new GildedRose(baseItems);
+
+        // WHEN
+        gildedRose.updateQuality();
+
+        // THEN
+        Assertions.assertEquals("Aged Brie", baseItems[0].name);
+        Assertions.assertEquals(9, baseItems[0].sellIn);
+        Assertions.assertEquals(21, (baseItems[0].quality));
+    }
+
+    // TODO refacto test (parameters)
+    // quality item < 50
 }
